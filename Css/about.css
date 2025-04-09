@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .nav li {
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav li:hover,
+  .nav li.active {
+    color: #00ffd5;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    margin-left: 1rem;
+    transition: transform 0.3s;
+  }
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .section {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+  }
+  
+  .section.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1, h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .card {
+    background: #111;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .card:hover {
+    background: #222;
+    transform: scale(1.05);
+    border-color: #00ffd5;
+  }
+  
+  .timeline ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .timeline li {
+    padding: 1rem 0;
+    border-left: 3px solid #00ffd5;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+  
