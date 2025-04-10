@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me – Donovan Xiong</title>
+  <title>Donovan Xiong - Portfolio</title>
   <link rel="stylesheet" href="/Css/about.css" />
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <a href="/index.html">Home</a>
-      <a href="/Html/about.html">About Me</a>
-      <a href="/Html/portfolio.html">Portfolio</a>
-    </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/Html/about.html" class="nav-link">About Me</a>
+      <a href="/Html/portfolio.html" class="nav-link">Portfolio</a>
+    </div>
     <div class="social-icons">
       <!-- Instagram Icon - Replace # with the actual Instagram profile URL -->
       <a href="https://www.instagram.com/itz.d0n0van/?next=%2F" target="_blank">
@@ -31,64 +33,74 @@
         <img src="/Images/Snap.png" alt="Snapchat" class="social-icon">
       </a>
     </div>
+
   </nav>
 
-  <section class="intro section reveal">
-    <h1>Hey, I’m Donovan </h1>
-    <h2>High school web developer & creative mind</h2>
-    <p>I blend code with creativity to build sleek, engaging websites. Based in California, I’ve been creating digital
-      experiences since [insert year].</p>
+  <header class="intro">
+    <h1>I'm Donovan Xiong</h1>
+    <p class="fade-in">
+      A passionate web programmer with 1–2 years of experience, blending creativity with functionality to build visually
+      appealing and user-friendly websites. My inspiration comes from the world around me—whether it's the sleek design
+      of JDM cars, the rhythm of music, or the seamless interaction of everyday technology.
+    </p>
+    <button class="btn pop-up" onclick="showAlert()">Get in touch</button>
+  </header>
+
+  <section class="history slide-in-left">
+    <h2>My History</h2>
+    <div class="content-box">
+      <p>
+        I've explored everything from front-end designs with HTML/CSS/JS to more complex back-end integrations using
+        Node.js and Firebase. My journey started by modifying websites for small businesses and evolved into building
+        full-stack projects with responsive and interactive UI.
+      </p>
+      <p>
+        I'm currently diving deeper into React.js and experimenting with 3D elements using Three.js to create immersive
+        web experiences.
+      </p>
+    </div>
+    <div class="image-placeholder"></div>
   </section>
 
-  <section class="journey section reveal">
-    <h2> My Journey</h2>
-    <p>It all started with curiosity — breaking down how websites work, rebuilding them, and adding my own touch.</p>
-    <p>From HTML & CSS experiments to real-world client sites, my coding adventure is just getting started.</p>
+  <section class="outside-code slide-in-right">
+    <h2>Outside the Code</h2>
+    <div class="gallery">
+      <div class="card zoom-hover">
+        <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Music Inspiration" />
+        <p>The rhythm of The Weeknd fuels creativity.</p>
+      </div>
+      <div class="card zoom-hover">
+        <img src="https://i.imgur.com/ZcLLrkY.jpg" alt="JDM Car" />
+        <p>Nothing like the curves of a Skyline GT-R.</p>
+      </div>
+      <div class="card zoom-hover">
+        <img src="https://i.imgur.com/OZ6Y9ZC.jpg" alt="Poetry" />
+        <p>Slow down. Refuel the mind with poetry.</p>
+      </div>
+    </div>
+    <button class="btn">View More</button>
   </section>
 
-  <section class="skills section reveal">
-    <h2> My Tools</h2>
-    <div class="grid">
-      <div class="card">HTML & CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">Figma</div>
+  <section class="contact fade-in-delay">
+    <h3>Have an Idea? Share and feel free to contact me.</h3>
+    <button class="btn">View More</button>
+    <div class="socials">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-snapchat"></i>
     </div>
   </section>
 
-  <section class="philosophy section reveal">
-    <h2> Design Philosophy</h2>
-    <p>Every line of code should serve a purpose — I focus on clarity, usability, and animation to make sites not just
-      work, but *feel* right.</p>
-  </section>
-
-  <section class="hobbies section reveal">
-    <h2> Outside the Code</h2>
-    <p>Music keeps me focused. JDM cars spark my imagination. The world around me fuels my designs. Everything connects.
-    </p>
-  </section>
-
-  <section class="timeline section reveal">
-    <h2> Timeline</h2>
-    <ul>
-      <li><strong>2024</strong> – </li>
-      <li><strong>2024</strong> – </li>
-      <li><strong>2024</strong> – </li>
-      <li><strong>2025</strong> – </li>
-    </ul>
-  </section>
-
-  <section class="contact section reveal">
-    <h2> Let's Connect</h2>
-    <p>Email: <a href="mailto:DonovanXiong000@gmail.com">DonovanXiong000@gmail.com</a></p>
-    <p>Phone: (559) 387-0271</p>
-    <p>Location: San Jose, CA</p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>Designed by Donovan Xiong © 2025</p>
+    <p>"Where creativity flows, blending depth and elegance in design."</p>
+    <button class="btn">Get in touch</button>
+    <p>Contact Me: <br>Email: DonovanXiong000@gmail.com <br>Phone: (559) 387 - 0271 <br>Address: 4119 San Jose Ave,
+      93619</p>
   </footer>
 
   <script src="/Java/about.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>

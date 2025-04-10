@@ -1,0 +1,135 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: black;
+}
+
+.nav-left a, .nav-right a {
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #5d576b;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-left {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.contact-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.contact-right {
+  flex: 1;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.checkbox {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #d1d1d1;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  border-top: 1px solid #fff;
+  background-color: black;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+}
+
+.footer-left h3 {
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 0.95rem;
+  margin-bottom: 15
+}

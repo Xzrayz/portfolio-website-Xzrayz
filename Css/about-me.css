@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.socials img {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.carousel {
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}
+
+.carousel-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0.6;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.carousel-container img.main {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  background: #222;
+  border: none;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+.artist-name {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.music-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.earbuds img {
+  height: 100px;
+  margin: 1rem;
+  transition: transform 0.3s;
+}
+
+.earbuds img:hover {
+  transform: scale(1.1);
+}
+
+.jdm-section {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.jdm-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.jdm-overlay {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  color: white;
+}
+
+.quotes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.quote-card {
+  background: #111;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 300px;
+  margin: 1rem;
+  text-align: center;
+}
+
+footer {
+  background: #111;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand,
+.contact,
+.links {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}

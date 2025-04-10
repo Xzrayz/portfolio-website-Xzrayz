@@ -1,103 +1,160 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #000;
-    color: #fff;
-    scroll-behavior: smooth;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3rem;
-    border-bottom: 1px solid #333;
-  }
-  
-  .nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-  
-  .nav li {
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-  }
-  
-  .nav li:hover,
-  .nav li.active {
-    color: #00ffd5;
-  }
-  
-  .social-icons img {
-    width: 24px;
-    margin-left: 1rem;
-    transition: transform 0.3s;
-  }
-  .social-icons img:hover {
-    transform: scale(1.2);
-  }
-  
-  .section {
-    max-width: 900px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 1s ease-out;
-  }
-  
-  .section.reveal.visible {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header.intro {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.history {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-box {
+  max-width: 500px;
+  margin-right: 40px;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 300px;
+  background-color: #dcdcdc;
+}
+
+.outside-code {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding-top: 10px;
+}
+
+.contact {
+  background-color: #635f6c;
+  text-align: center;
+  padding: 40px 20px;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+.socials {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.socials i {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.socials i:hover {
+  transform: scale(1.3);
+}
+
+/* Animations */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInRight 1s forwards;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  to {
     opacity: 1;
-    transform: translateY(0);
   }
-  
-  h1, h2 {
-    font-weight: 600;
-    margin-bottom: 1rem;
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .card {
-    background: #111;
-    padding: 1rem;
-    border: 1px solid #333;
-    border-radius: 8px;
-    text-align: center;
-    transition: all 0.3s;
-  }
-  
-  .card:hover {
-    background: #222;
-    transform: scale(1.05);
-    border-color: #00ffd5;
-  }
-  
-  .timeline ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .timeline li {
-    padding: 1rem 0;
-    border-left: 3px solid #00ffd5;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 2rem;
-    border-top: 1px solid #333;
-    font-size: 0.9rem;
-    opacity: 0.6;
-  }
-  
+}
