@@ -6,6 +6,44 @@ body {
   overflow-x: hidden;
 }
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #888;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 50px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 header.intro {
   padding: 60px 20px;
   max-width: 600px;
@@ -94,21 +132,6 @@ p {
   text-align: center;
   padding: 40px 20px;
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-}
-
-.socials {
-  margin-top: 20px;
-  font-size: 1.5rem;
-}
-
-.socials i {
-  margin: 0 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.socials i:hover {
-  transform: scale(1.3);
 }
 
 /* Animations */
