@@ -42,3 +42,23 @@ document.querySelector(".nav.left").addEventListener("click", () => {
     });
   });
   
+
+  // Register the plugin
+gsap.registerPlugin(ScrollTrigger);
+
+// Target each section to animate
+gsap.utils.toArray("section").forEach(section => {
+  gsap.from(section, {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }
+  });
+});
+
+
