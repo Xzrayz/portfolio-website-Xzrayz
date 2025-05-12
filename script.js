@@ -1,5 +1,3 @@
-
-
 // GSAP Animations
 gsap.from(".animate-text", {
     opacity: 0,
