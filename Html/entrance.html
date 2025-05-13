@@ -7,6 +7,7 @@
   <title>Donovan Xiong - Portfolio</title>
   <link rel="stylesheet" href="/Css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <!-- ========================== Cookie Consent ========================== -->
@@ -172,16 +173,61 @@
 
 
   <!-- ========================== About Me Section ========================== -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate web developer with a strong eye for design, drawing inspiration from the world around me
-      to create functional and visually engaging websites. In my free time, I enjoy listening to music, which fuels
-      my creativity and focus. I'm also an enthusiast of JDM cars, appreciating their engineering, style, and
-      performance.
-    </p>
-    <button class="btn">Discover more</button>
-  </section>
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<section id="about" class="about-section">
+  <div class="about-container">
+
+    <!-- Left Content -->
+    <div class="about-left" data-aos="fade-up">
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit at arcu, tempor, gravida morbi amet hendrerit
+        pharetra risus nec fames amet.
+      </p>
+
+      <button class="btn">Learn more</button>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-behance"></i>
+      </div>
+    </div>
+
+    <!-- Center Image -->
+    <div class="about-image" data-aos="fade-up">
+      <img src="/Images/donovan-image.png" alt="Portrait">
+    </div>
+
+    <!-- Right Content -->
+    <div class="about-right" data-aos="fade-up">
+      <h2>Resorces I used</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit at arcu, tempor, gravida morbi amet hendrerit
+        pharetra risus nec fames amet.
+      </p>
+      <hr />
+      <div class="company-logos">
+        <div><i class="fas fa-figma"></i> Figma</div>
+        <div><i class="fas fa-visual-studio-code"></i> VSC</div>
+        <div><i class="fas fa-github"></i> Github</div>
+        <div><i class="fas fa-photoshop"></i> photoshop</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
   <!-- ========================== Portfolio Section ========================== -->
   <section class="portfolio">
