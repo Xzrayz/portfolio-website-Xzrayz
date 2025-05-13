@@ -1,136 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donovan Xiong - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Entrance</title>
+    <link rel="stylesheet" href="/Css/entrance.css">
+    <style>
+        #entrance {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        #logo {
+            width: 400px;
+            height: auto;
+            transition: opacity 1s ease;
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-links">
-      <a href="/index.html" class="nav-link">Home</a>
-      <a href="/Html/about-me.html" class="nav-link">About Me</a>
-      <a href="/Html/portfolio.html" class="nav-link">Portfolio</a>
-    </div>
-    <div class="social-icons">
-      <!-- Instagram Icon - Replace # with the actual Instagram profile URL -->
-      <a href="https://www.instagram.com/itz.d0n0van/?next=%2F" target="_blank">
-        <img src="/Images/instagram.jpg" alt="Instagram" class="social-icon">
-      </a>
-
-      <!-- Facebook Icon - Replace # with the actual Facebook profile URL -->
-      <a href="https://www.facebook.com/Dxiong08" target="_blank">
-        <img src="/Images/facebook.jpg" alt="Facebook" class="social-icon">
-      </a>
-
-      <!-- Snapchat Icon - Replace # with the actual Snapchat profile URL -->
-      <a href="https://www.snapchat.com/web" target="_blank">
-        <img src="/Images/snapchat.jpg" alt="Snapchat" class="social-icon">
-      </a>
+    <div id="entrance">
+        <img src="/Images/entrance.png" alt="entrance" id="logo">
     </div>
 
-  </nav>
+    <script>
+        // Check if the page was already visited in the current session
+        if (!sessionStorage.getItem("visited")) {
+            sessionStorage.setItem("visited", "true");
 
-  <div class="cursor"></div>
+            // Start fade-out effect
+            setTimeout(() => {
+                document.getElementById("logo").classList.add("fade-out");
+            }, 4000);
 
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Hey there,</h2>
-    <h1 class="animate-text">I’m Donovan Xiong</h1>
-    <h3 class="animate-text">- Web Developer</h3>
-    <p class="animate-text">
-      Being a web developer in high school is a great way to explore coding, design, and create websites while
-      gaining skills that are valuable in many careers.
-      It allows you to combine creativity and problem-solving in an exciting and practical way.
-    </p>
-    <a href="/Html/getintouch.html">
-      <button class="btn">Get in touch</button>
-    </a>
-
-  </section>
-
-  <!-- About Me -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate web developer with a strong eye for design, drawing inspiration from the world around me to
-      create functional and visually engaging websites. In my free time, I enjoy listening to music, which fuels
-      my creativity and focus.
-      I'm also an enthusiast of JDM cars, appreciating their engineering, style, and performance.
-    </p>
-    <button class="btn">Discover more</button>
-  </section>
-
-  <section class="carousel-container">
-      <div class="carousel-wrapper" id="carousel">
-          <!-- Add your project images here -->
-          <div class="carousel-item">
-              <img src="/Images/trion.png" alt="Project 1" class="project-image" />
-              <div class="project-title">Trion - Supercars</div>
-          </div>
-          <div class="carousel-item">
-              <img src="/Images/eecu.png" alt="Project 2" class="project-image" />
-              <div class="project-title">EECU Budget Calculator</div>
-          </div>
-          <div class="carousel-item">
-              <img src="not-found.png" /><img src="http://goo.gl/ijai22"  alt="Project 3" class="project-image" />
-              <div class="project-title">PLC Ministry</div>
-          </div>
-          <!-- Repeat as needed -->
-      </div>
-      <!-- Navigation buttons -->
-      <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
-      <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
-  </div>
-  
-
-  </section>
-
-  <footer class="footer-section">
-    <div class="footer-container">
-      <!-- Left Side -->
-      <div class="footer-left">
-        <h2>Sumi & Seiryu <span class="x-symbol">X</span></h2>
-        <p><em>"Where creativity flows, blending depth and elegance in design."</em></p>
-        <button class="contact-btn">Get in touch</button>
-        <div class="social-icons">
-          <img src="/Images/instagram.jpg" alt="Instagram" />
-          <img src="/Images/facebook.jpg" alt="Facebook" />
-          <img src="/Images/snapchat.jpg" alt="Snapchat" />
-        </div>
-      </div>
-
-      <!-- Center -->
-      <div class="footer-middle">
-        <h3>Contact Me</h3>
-        <p><strong>Email:</strong><br>DonovanXiong000@gmail.com</p>
-        <p><strong>Phone:</strong><br>(559) 387 - 0271</p>
-        <p><strong>Address:</strong><br>4119 San Jose ave 93619</p>
-      </div>
-
-      <!-- Right Side -->
-      <div class="footer-right">
-        <ul>
-          <li>Home</li>
-          <li>About Me</li>
-          <li>Portfolio</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
+            // Redirect to portfolio page after 5 seconds
+            setTimeout(() => {
+                window.location.href = "/Html/entrance.html";
+            }, 5000);
+        } else {
+            // If it's already visited, jump straight to portfolio page
+            window.location.href = "/Html/entrance.html";
+        }
+    </script>
 </body>
-
 </html>

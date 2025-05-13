@@ -223,6 +223,17 @@ audio {
   color: white;
 }
 
+.jdm-overlay p{
+  position: absolute;
+  font-size: 1.0vw;
+  width: 400px;
+  top: 90%;
+  left: 30%;
+  color: white;
+  text-align: left;
+}
+
+
 .video-container {
   display: flex;
   border: solid .2vw white;

@@ -18,8 +18,8 @@ body, html {
 }
 
 #logo {
-    width: 20%;
-    animation: fadeIn 2s ease-in-out;
+    width: 50%;
+    animation: fadeIn 4s ease-in-out;
 }
 
 @keyframes fadeIn {
