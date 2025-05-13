@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donovan Xiong - Portfolio</title>
   <link rel="stylesheet" href="/Css/about.css" />
+  <link rel="Icon" href="/Images/gengar.gif" />
 </head>
 
 <body>
@@ -14,7 +15,7 @@
   <nav class="navbar">
     <div class="nav-links">
       <a href="/index.html" class="nav-link">Home</a>
-      <a href="/Html/about-me.html" class="nav-link">About Me</a>
+      <a href="/Html/about.html" class="nav-link">About</a>
       <a href="/Html/portfolio.html" class="nav-link">Portfolio</a>
     </div>
     <div class="social-icons">
@@ -46,47 +47,96 @@
       appealing and user-friendly websites. My inspiration comes from the world around me—whether it's the sleek design
       of JDM cars, the rhythm of music, or the seamless interaction of everyday technology.
     </p>
-    <button class="btn pop-up" onclick="showAlert()">Get in touch</button>
+    <a href="getintouch.html"><button class="btn pop-up">Get in touch</button></a>
   </header>
 
-  <section class="history slide-in-left">
-    <h2>My History</h2>
-    <div class="content-box">
+  <section class="history-section">
+    <div class="history-text">
+      <h2>My History</h2>
       <p>
-        I've explored everything from front-end designs with HTML/CSS/JS to more complex back-end integrations using
-        Node.js and Firebase. My journey started by modifying websites for small businesses and evolved into building
-        full-stack projects with responsive and interactive UI.
-      </p>
-      <p>
-        I'm currently diving deeper into React.js and experimenting with 3D elements using Three.js to create immersive
-        web experiences.
+        I'm a passionate web app coder and designer with 1–2 years of hands-on experience.
+        I love bringing ideas to life through clean code and beautiful design. Whether it's crafting
+        responsive user interfaces or experimenting with fresh UI/UX concepts, my goal is always the same:
+        to create meaningful digital experiences that inspire and connect.
       </p>
     </div>
-    <div class="image-placeholder"></div>
+    <div class="history-image">
+      <img src="/Images/snorlax.gif" alt="A creative workspace or coding setup" />
+    </div>
+  </section>
+<style>
+  .history-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .history-text {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .history-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .history-text p {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  .history-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .history-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .history-section {
+      flex-direction: column;
+    }
+
+    .history-text, .history-image {
+      padding: 10px;
+    }
+  }
+</style>
   </section>
 
   <section class="outside-code slide-in-right">
     <h2>Outside the Code</h2>
     <div class="gallery">
       <div class="card zoom-hover">
-        <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Music Inspiration" />
-        <p>The rhythm of The Weeknd fuels creativity.</p>
+        <img src="/Images/PartyNextDoor.png" alt="Music Inspiration" />
+        <p>The rhythm of PartyNextDoor fuels creativity.</p>
       </div>
       <div class="card zoom-hover">
-        <img src="https://i.imgur.com/ZcLLrkY.jpg" alt="JDM Car" />
-        <p>Nothing like the curves of a Skyline GT-R.</p>
+        <img src="/Images/350z.png" alt="JDM Car" />
+        <p>Nothing like the curves of a Nissan 350z.</p>
       </div>
       <div class="card zoom-hover">
-        <img src="https://i.imgur.com/OZ6Y9ZC.jpg" alt="Poetry" />
+        <img src="/Images/poetry.png" alt="Poetry" />
         <p>Slow down. Refuel the mind with poetry.</p>
       </div>
     </div>
-    <button class="btn">View More</button>
+    <a href="about-me.html"><button class="btn">View More</button></a>
   </section>
 
   <section class="contact fade-in-delay">
     <h3>Have an Idea? Share and feel free to contact me.</h3>
-    <button class="btn">View More</button>
+    <a href="/Html/getintouch.html"><button class="btn">View More</button></a>
     <div class="socials">
       <i class="fab fa-instagram"></i>
       <i class="fab fa-facebook"></i>
@@ -94,12 +144,40 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>"Where creativity flows, blending depth and elegance in design."</p>
-    <button class="btn">Get in touch</button>
-    <p>Contact Me: <br>Email: DonovanXiong000@gmail.com <br>Phone: (559) 387 - 0271 <br>Address: 4119 San Jose Ave,
-      93619</p>
+   <!-- ========================== Footer Section ========================== -->
+   <footer class="footer-section">
+    <div class="footer-container">
+
+      <!-- Left Side -->
+      <div class="footer-left">
+        <h2>Sumi & Seiryu <span class="x-symbol">X</span></h2>
+        <p><em>"Where creativity flows, blending depth and elegance in design."</em></p>
+        <a href="/Html/getintouch.html"><button class="contact-btn">Get in touch</button></a>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/itz.d0n0van/?next=%2F"><img src="/Images/instagram.jpg" alt="Instagram" /></a>
+          <a href="https://www.facebook.com/Dxiong08"><img src="/Images/facebook.jpg" alt="Facebook" /></a>
+          <a href="https://www.snapchat.com/web"><img src="/Images/snapchat.jpg" alt="Snapchat" /></a>
+        </div>
+      </div>
+
+      <!-- Center -->
+      <div class="footer-middle">
+        <h3>Contact Me</h3>
+        <p><strong>Email:</strong><br>DonovanXiong000@gmail.com</p>
+        <p><strong>Phone:</strong><br>(559) 387 - 0271</p>
+        <p><strong>Address:</strong><br>4119 San Jose ave 93619</p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="footer-right">
+        <ul>
+          <li>Home</li>
+          <li>About Me</li>
+          <li>Portfolio</li>
+        </ul>
+      </div>
+
+    </div>
   </footer>
 
   <script src="/Java/about.js"></script>
