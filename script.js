@@ -18,30 +18,23 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-document.querySelector(".nav.left").addEventListener("click", () => {
-    alert("Previous project");
-  });
-  
-  document.querySelector(".nav.right").addEventListener("click", () => {
-    alert("Next project");
-  });
-  
-  document.querySelector(".see-project").addEventListener("click", () => {
-    alert("View full project details...");
-  });
-  
+let currentIndex = 0;
 
-  document.querySelector('.contact-btn').addEventListener('click', () => {
-    alert('Redirecting to contact form...');
-  });
-  
-  // Add functionality to nav items if needed
-  document.querySelectorAll('.footer-right li').forEach(item => {
-    item.addEventListener('click', () => {
-      alert(`Going to ${item.textContent}`);
-    });
-  });
-  
+function moveCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+    const items = carousel.querySelectorAll(".carousel-item");
+    const totalItems = items.length;
+
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = totalItems - 1;
+    } else if (currentIndex >= totalItems) {
+        currentIndex = 0;
+    }
+
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
 
 const cursor = document.querySelector('.cursor');

@@ -36,6 +36,19 @@ const artistData = [
 
 let currentIndex = 4; // Start on Ne-Yo
 
+const video = document.querySelector('video');
+    const container = document.querySelector('.video-container');
+
+    container.addEventListener('mouseenter', () => {
+        video.currentTime = 0; // Reset to the beginning
+        video.play();
+    });
+
+    container.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0; // Reset when hover ends
+    });
+    
 function scrollCarousel(direction) {
   imgs[currentIndex].classList.remove("main");
 
