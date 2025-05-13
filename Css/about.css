@@ -226,6 +226,17 @@ p {
 
 .contact {
   font-size: x-large;
+  color: #252B3D;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow:
+    0 0 5px #fff,
+
+    0 0 40px #6C6573,
+    0 0 50px #6C6573,
+    0 0 60px #6C6573;
+  background-color: #000; /* for contrast */
+  padding: 50px;
   margin-top: 15vh;
   background-image: url(/Images/desing.jpg);
   text-align: left;
@@ -233,6 +244,13 @@ p {
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
 }
 
+.contact-btn {
+  background-color: transparent;
+  color: white;
+  border: white solid 2px;
+  padding: 10px 20px;
+  
+}
 /* Animations */
 
 .fade-in {
@@ -282,6 +300,22 @@ p {
 }
 
 /* =========================== Footer =========================== */
+/* =========================== Social Icons =========================== */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.social-icon {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 .footer-section {
   margin-top: 5vw;
   background-color: #000;

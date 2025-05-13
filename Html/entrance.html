@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/Css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="Icon" href="/Images/gengar.gif" />
+   <link rel="Icon" href="/Images/gengar.gif" />
 </head>
 
 <!-- ========================== Cookie Consent ========================== -->
@@ -22,6 +22,11 @@
     <button class="cookie-btn">ACCEPT COOKIES</button>
     <button class="close-btn" onclick="closeConsent()">✕</button>
   </div>
+</div>
+
+<!-- 🍪 Cookie Animation Container -->
+<div id="cookie-animation">
+  <img src="cookie.gif" alt="Cookie Animation" />
 </div>
 
 <style>
@@ -103,6 +108,26 @@
     transform: scale(1.1);
     color: #f5f5f5;
   }
+
+  /* 🎉 Cookie Animation Styles */
+  #cookie-animation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    z-index: 1001;
+    transition: transform 0.6s ease;
+    pointer-events: none;
+  }
+
+  #cookie-animation.show {
+    transform: translateX(-50%) scale(1);
+  }
+
+  #cookie-animation img {
+    width: 120px;
+    height: auto;
+  }
 </style>
 
 <script>
@@ -111,13 +136,24 @@
   }
 
   function acceptCookies() {
-    closeConsent(); // Will not store, shows again on refresh
+    const animation = document.getElementById('cookie-animation');
+    animation.classList.add('show');
+
+    // Hide cookie banner after 1 second (adjust as needed)
+    setTimeout(() => {
+      closeConsent();
+    }, 1000);
+
+    // Hide animation after 2.5 seconds
+    setTimeout(() => {
+      animation.classList.remove('show');
+    }, 2500);
   }
 
   window.onload = function () {
     setTimeout(() => {
       document.getElementById('cookie-consent').classList.add('show');
-    }, 500); // Delay for a smooth entrance
+    }, 500);
   };
 
   document.addEventListener('DOMContentLoaded', function () {
