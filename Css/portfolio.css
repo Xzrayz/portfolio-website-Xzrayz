@@ -7,6 +7,45 @@
   scroll-behavior: smooth;
 }
 
+/* =========================== Navbar =========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #888;
+}
+
+/* =========================== Social Icons =========================== */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 html {
   cursor: none;
 }
@@ -14,6 +53,7 @@ html {
 * {
  cursor: none !important;
 }
+
 
 
 .cursor {
