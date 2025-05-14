@@ -42,14 +42,14 @@ const links = [
         caseStudy: "https://thefastprotocol.netlify.app/"
     },
     {
-        github: "https://github.com/ecommerce-redesign",
-        demo: "https://ecommerce-demo.com",
-        caseStudy: "https://ecommerce-casestudy.com"
+        github: "https://supercar-web.netlify.app/",
+        demo: "https://plc-church.netlify.app/#about",
+        caseStudy: "https://thefastprotocol.netlify.app/"
     },
     {
-        github: "https://github.com/interactive-landing",
+        github: "https://supercar-web.netlify.app/",
         demo: "https://interactive-landing.com",
-        caseStudy: "https://interactive-casestudy.com"
+        caseStudy: "https://thefastprotocol.netlify.app/"
     }
 ];
 
