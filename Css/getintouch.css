@@ -1,9 +1,77 @@
-* {
+/* =========================== General Styles =========================== */
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+  padding: 20px;
+  text-align: center;
 }
+
+html, * {
+  cursor: none !important;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #252B3D;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  z-index: 9999;
+  animation: pulse 3s infinite ease-in-out;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.3); }
+}
+
+/* =========================== Navbar =========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #888;
+}
+
+/* =========================== Social Icons =========================== */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 
 html {
   cursor: none;
