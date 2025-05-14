@@ -37,9 +37,9 @@ const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 const links = [
     {
-        github: "https://github.com/trion-project",
-        demo: "https://trion-live.com",
-        caseStudy: "https://trion-casestudy.com"
+        github: "https://supercar-web.netlify.app/",
+        demo: "https://plc-church.netlify.app/#about",
+        caseStudy: "https://thefastprotocol.netlify.app/"
     },
     {
         github: "https://github.com/ecommerce-redesign",
